@@ -206,7 +206,7 @@ open class StackViewCell: UIView {
   private func setUpTapGestureRecognizer() {
     tapGestureRecognizer.addTarget(self, action: #selector(handleTap(_:)))
     tapGestureRecognizer.delegate = self
-    addGestureRecognizer(tapGestureRecognizer)
+	contentView.addGestureRecognizer(tapGestureRecognizer)
     updateTapGestureRecognizerEnabled()
   }
 
